@@ -53,9 +53,6 @@ function create() {
     game.teclaPulsada;
     game.velocityFotos=50;
 
-
-    //crearPersonaje();
-
     txtPuntaje = game.add.text(25, 16, 'Puntos: '+game.puntaje, { font: '24px Arial', fill: '#000' });
 
     teclas = game.input.keyboard.createCursorKeys();
@@ -70,7 +67,7 @@ function create() {
 }
 function welcome(){
       game.welcome=game.add.text(10, 250, 'Bienvenido', {font:'80px Arial', fill: '#000'});
-      game.welcome1=game.add.text(10, 400, 'Pulsa la primera letra del objeto de la foto, date prisa, como lleve a la parte de la derecha pierdes',
+      game.welcome1=game.add.text(10, 400, 'Pulsa la primera letra del objeto de la foto',
        {font:'18px Arial', fill: '#000'});
       game.welcome2=game.add.text(10, 500, 'Pulsa cualquier tecla para empezar',
         {font:'12px Arial', fill: '#000'});
@@ -115,9 +112,7 @@ function update() {
                 if(foto.tag === letra1){
                   game.puntaje= game.puntaje+10;
                   foto.kill();
-
                 }
-
             });
             crearPersonaje();
 
@@ -128,10 +123,4 @@ function update() {
 
 
   };
-
-
-
-
-
-
 }

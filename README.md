@@ -2,7 +2,7 @@
 
 This is an example of using the phaser library to create a game
 
-## #Prerequisites
+### Prerequisites
 
 You will need git to clone the material-start repository. You can get git from http://git-scm.com/.
 

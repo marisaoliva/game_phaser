@@ -6,15 +6,15 @@ var path = require('path'),
 var outPath = path.join(__dirname, 'dist');
 
 module.exports = {
-    entry: './src/test_cognifit.js',
+    entry: './src/app.js',
     output: {
-        path: './dist',
+        path: './',
         filename: 'game.js',
     },
     devServer: {
-      contentBase: path.join(__dirname, 'dist'),
+      contentBase: path.join(__dirname, './'),
         compress: true,
-        port: 9000,
+        port: 3000,
         inline: true,
     }
 };
